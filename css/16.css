@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @font-face {
+        font-family: 'GERASOL';
+        src: url(./fonts/gerasol.ttf);
+    }
+}
+
+body{
+    background: #2e364a;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.time-line{
+    display: flex;
+    
+    position: relative;
+    left: 150px;
+    max-width: 80%;
+    height: 460px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    padding: 10px 50px;
+    max-height: 50%;
+    width: 242px;
+    height: 100px;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateX(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+.container:nth-child(4){
+    animation-delay: 3s;
+}
+
+.text-box{
+    position: relative;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.top-container{
+    top: 28%;
+    
+}
+.bottom-container{
+    top:49.5%
+    
+}
+.circle{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    
+    bottom: -4px;
+}
+
+.bottom-container .circle{
+    top: -5px;
+}
+
+.time-line::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    top: 50%;
+    margin-top: -3px;
+    z-index: -1;
+    animation: moveline 4s linear forwards;
+}
+
+@keyframes moveline{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.text-box h2{
+    font-weight: 600;
+}
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
