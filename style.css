@@ -2,10 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    @font-face {
+        font-family: 'GERASOL';
+        src: url(./fonts/gerasol.ttf);
+    }
 }
 
 body{
     background: #2e364a;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 
 .time-line{
@@ -42,9 +48,6 @@ body{
 .container:nth-child(3){
     animation-delay: 2s;
 }
-.container:nth-child(3){
-    animation-delay: 2s;
-}
 .container:nth-child(4){
     animation-delay: 3s;
 }
@@ -68,17 +71,41 @@ body{
     left:50%;
 }
 
-.container img{
+/* .container img{
     position: absolute;
     width: 40px;
     border-radius: 50%;
     right: -20px;
     top: 32px;
     z-index: 10;
+} */
+
+.circle{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 10;
+    right: -22px;
+    top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container a{
+    font-family: 'GERASOL';
+    font-size: 20px;
+    width: 40px;
+    color: #eeeaea;
+    text-decoration: none;
+
+
 }
 
-.right-container img{
-    left: -20px;
+.right-container .circle{
+    left: -23px;
 }
 
 .time-line::after{
@@ -159,3 +186,4 @@ body{
     }
 
 }
+
