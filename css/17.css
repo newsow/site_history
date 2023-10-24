@@ -9,8 +9,8 @@
 }
 
 body{
-    background: rgb(8,25,43);
-    background: linear-gradient(36deg, rgba(8,25,43,1) 0%, rgba(16,63,200,1) 55%);
+    background: rgb(41,53,71);
+    background: linear-gradient(180deg, rgba(41,53,71,1) 0%, rgba(16,18,23,1) 36%);
     font-family: 'Montserrat', sans-serif;
 }
 .head{
@@ -160,9 +160,9 @@ body{
 .information{
     margin: 0 auto;
     width: 70%;
-    background-color: rgb(187, 223, 253);
+    background-color: rgb(227, 226, 226);
     border-radius: 10px;
-    box-shadow: 20px 20px 20px 12px rgb(25, 33, 122);
+    box-shadow: 20px 20px 20px 12px rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,7 +171,7 @@ body{
     
 }
 .owners{
-    height: 400px;
+    height: 310px;
     margin-top: 30px;
     display: flex;
     justify-content: space-around;
@@ -186,7 +186,11 @@ body{
     display: flex;
     justify-content: center;
 }
-
+.owner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .owner img{
     width: 140px;
     height: 140px;
@@ -204,3 +208,5 @@ body{
     margin: 25px 0;
     font-size: 19px;
 }
+
+
